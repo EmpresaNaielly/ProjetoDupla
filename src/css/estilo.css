@@ -38,3 +38,27 @@ header p{
     padding: 10px;
     
 }
+main{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:black;
+}
+.bloco{
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(110, 107, 107, 0.637);
+    border-radius: 10px;
+}
+
+.bloco.esquerda{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.bloco.direita{
+    margin-left: auto;
+    margin-right:0;
+}
