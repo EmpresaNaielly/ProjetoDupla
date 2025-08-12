@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 :root{
-    --fundoBloco: #DEDCE3;
+    --fundoBloco: #b1b0b3;
     --fundoFooter: #415EF0;
-
 }
 
 header{
@@ -25,19 +24,18 @@ header h1{
     background-color: rgba(0, 0, 0, 0.479);
     padding: 20px;
     width: 300px;
-
-
 }
 
 header p{
     color:rgb(248, 248, 248);
-    width: 500px;
+    max-width: 500px;
+    min-width: 300px;
     margin-left: 10%;
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.555);
     padding: 10px;
-    
 }
+
 main{
     display:flex;
     gap:20px;
@@ -49,7 +47,7 @@ main{
 .bloco{
     width: 80%;
     padding: 20px;
-    background-color: rgba(110, 107, 107, 0.637);
+    background-color: var(--fundoBloco);
     border-radius: 10px;
 }
 
@@ -68,11 +66,18 @@ footer{
     text-align: center;
     flex-direction: column;
     max-width: 100%;
+    padding: 10px;
     background-color: rgba(10, 10, 117, 0.692);
     color: rgb(0, 0, 0);
+}
+
+footer a{
+    color: rgb(3, 2, 26);
     text-decoration: none;
+    transition: .2s;
 }
 
 footer a:hover{
-    color: darkgray
+    color: darkgray;
+    text-decoration: underline 1px darkgray;
 }
