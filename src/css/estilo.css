@@ -13,7 +13,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 380px;
     background-position: center;
 }
 
@@ -23,32 +23,49 @@ header h1{
     margin: auto;
     background-color: rgba(0, 0, 0, 0.479);
     padding: 20px;
+    border-radius: 5px;
     width: 300px;
+    font-size: 3em;
 }
 
 header p{
     color:rgb(248, 248, 248);
-    max-width: 500px;
-    min-width: 300px;
-    margin-left: 10%;
-    margin-top: 50px;
+    max-width: 60%;
+    margin: 40px auto 10px 20px;
     background-color: rgba(0, 0, 0, 0.555);
-    padding: 10px;
+    padding: 15px;
+    font-size: 1.3em;
+    max-height: 300px;
+    border-radius: 5px;
 }
 
 main{
-    display:flex;
-    gap:20px;
+    display: flex;
+    gap: 20px 10px;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 30px 10px;
     background-color:black;
+    min-height: 1000px;
 }
+
 .bloco{
-    width: 80%;
+    max-width: 80%;
     padding: 20px;
     background-color: var(--fundoBloco);
     border-radius: 10px;
+}
+
+.bloco h1{
+    font-size: 2em;
+}
+
+.bloco p{
+    text-align: start;
+    text-indent: 5px;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.3em;
 }
 
 .bloco.esquerda{
@@ -66,9 +83,11 @@ footer{
     text-align: center;
     flex-direction: column;
     max-width: 100%;
-    padding: 10px;
+    font-weight: 550;
+    padding: 30px;
     background-color: rgba(10, 10, 117, 0.692);
     color: rgb(0, 0, 0);
+    font-size: 1em;
 }
 
 footer a{
@@ -80,4 +99,26 @@ footer a{
 footer a:hover{
     color: darkgray;
     text-decoration: underline 1px darkgray;
+}
+@media (width < 509px){
+    header p{
+        margin: 10px auto;
+        max-width: 100%;
+    }
+    .bloco{
+        max-width: 100%;
+    }
+}
+@media (width < 350px){
+    header p{
+        font-size: 1em;
+    }
+
+    .bloco.esquerda{
+        margin-right: 0;
+    }
+
+    .bloco.direita{
+        margin-left: 0;
+    }
 }
